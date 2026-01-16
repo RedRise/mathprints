@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mathprints"
+version = "0.1.0"
+description = "Generate printable math worksheets"
+authors = ["Mathprints Team <polluxxx@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.scripts]
+mathprints = "src.cli:main"
+
+[build-system]
+requires = ["poetry-core>=1.7.0"]
+build-backend = "poetry.core.masonry.api"
