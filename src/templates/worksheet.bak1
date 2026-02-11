@@ -16,7 +16,7 @@
 \setlength{\parskip}{0pt}
 \setlist[itemize]{leftmargin=*,itemsep=0.25em,topsep=0pt,partopsep=0pt}
 \titleformat{\section}{\large\bfseries}{}{0em}{}
-\AddToShipoutPictureFG{%
+\AddToShipoutPictureFG*{%
   \begin{tikzpicture}[remember picture,overlay]
     \draw[gray!50, line width=0.3pt] (current page.north) -- (current page.south);
   \end{tikzpicture}%
